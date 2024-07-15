@@ -1,0 +1,112 @@
+
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(34, 75, 75);
+}
+
+
+/* header*/
+.info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  height: 80px;
+  background-color: rgb(21, 131, 120);
+  box-shadow: -24px 18px 50px -10px #000000;
+  width: 100%;
+  position: fixed;
+  top:0;
+
+}
+
+/* links in header*/
+a{
+  color: rgb(37, 36, 36);
+  text-decoration: none;
+  font-weight: 650;
+  font-size: 26px;
+}
+
+a:hover{
+  color:rgb(81, 78, 78);
+}
+
+
+/* div 1 with logo and paragraph*/
+.aboutme{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about me paragraph*/
+.intro{
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(89, 106, 102);
+  width: 670px;
+
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #3c6864;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(112, 210, 215); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 120px; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(112, 210, 215)}
+}
+
+.service-intro{
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: transparent;
+  font-size: 30px;
+  color: rgb(90, 107, 103);
+  text-decoration: underline;
+}
+
+.service-container{
+ display: flex;
+ flex-direction: row;
+}
+
+.first-container,
+.second-container,
+.third-container,
+.fourth-container{
+  display: grid;
+  justify-content: inline-block;
+  margin: 40px;
+  padding: 40px;
+  background-color: rgb(33, 86, 81);
+  padding: 40px;
+  font-size: 25px;
+  width: 300px;;
+  color: rgb(90, 107, 103);
+  font-weight: 600;
+
+  
+}
+
